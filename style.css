@@ -1,0 +1,315 @@
+margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:#1f2937;
+    color:#fff;
+    padding:15px;
+}
+
+.logo-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-box img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+}
+
+.logo-box h1{
+    font-size:22px;
+}
+
+.logo-box p{
+    font-size:13px;
+    color:#ccc;
+}
+
+.telegram{
+    text-align:center;
+    margin:20px;
+}
+
+.telegram-btn{
+    background:#0088cc;
+    color:#fff;
+    padding:12px 25px;
+    text-deco}ration:none;
+    border-radius:8px;
+    display:inline-block;
+    font-weight:bold;
+}
+
+.apps{
+    padding:20px;
+}
+
+.apps h2{
+    margin-bottom:15px;
+}
+
+.app-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(170px,1fr));
+    gap:20px;
+}
+
+.app-card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+
+.app-card img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+}
+
+.app-info{
+    padding:12px;
+    text-align:center;
+}
+
+.app-info h3{
+    margin-bottom:8px;
+    font-size:18px;
+}
+
+.rating{
+    color:gold;
+    margin-bottom:10px;
+}
+
+.download-btn{
+    display:block;
+    background:#16a34a;
+    color:#fff;
+    text-decoration:none;
+    padding:10px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.download-btn:hover{
+    background:#15803d;
+}
+
+footer{
+    background:#111827;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+.offer-slider{
+    width:100%;
+    overflow:hidden;
+    background:#ff9800;
+    color:#fff;
+    padding:12px 0;
+    white-space:nowrap;
+    font-size:18px;
+    font-weight:700;
+    margin:15px 0;
+    border-radius:10px;
+}
+
+.offer-track{
+    display:inline-block;
+    animation:offerMove 18s linear infinite;
+}
+
+.offer-track span{
+    display:inline-block;
+    margin-right:80px;
+}
+
+@keyframes offerMove{
+    0%{
+        transform:translateX(100%);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
+}
+/* ===== Banner Slider ===== */
+
+.banner-slider{
+    width:100%;
+    height:180px;
+    overflow:hidden;
+    position:relative;
+    margin:10px 0;
+    border-radius:15px;
+}
+
+.slides{
+    width:100%;
+    height:100%;
+    position:relative;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transition:opacity .5s;
+}
+
+.slide.active{
+    opacity:1;
+}
+/* ===== Banner Slider ===== */
+
+.banner-slider{
+    width:100%;
+    height:180px;
+    position:relative;
+    overflow:hidden;
+    margin:10px 0;
+    border-radius:12px;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition:opacity .5s ease;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.slide.active{
+    opacity:1;
+}
+.banner-slider{
+    width:100%;
+    height:180px;
+    overflow:hidden;
+}
+
+.slides{
+    width:100%;
+    height:100%;
+}
+
+.slide{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    display:none;
+}
+
+.slide.active{
+    display:block;
+}
+.search-box{
+    padding:12px 15px;
+    background:#111827;
+}
+.search-box input{
+    width:100%;
+    height:50px;
+    padding:0 15px;
+    font-size:18px;
+    border:2px solid #0088cc;
+    border-radius:10px;
+    outline:none;
+    box-sizing:border-box;
+}
+
+.logo-box img{
+    width:80px;
+    height:80px;
+}
+
+.logo-box h1{
+    font-size:20px;
+    margin-left:15px;
+}
+
+.logo-box p{
+    font-size:15px;
+}
+header{
+    background:#EAF4FF;
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+
+.logo-box{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    flex-wrap:nowrap;
+    gap:18px;
+    padding:20px;
+}
+
+.logo-box img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+}
+
+.logo-box h1{
+    font-size:28px;
+    color:#222;
+    margin:0;
+    font-weight:700;
+    white-space:nowrap;
+}
+.verified{
+    color:#1D9BF0;
+    font-size:20px;
+    margin-left:6px;
+    vertical-align:middle;
+}
+.logo-box p{
+    font-size:17px;
+    color:#666;
+    margin-top:5px;
+}
+
+.telegram{
+    text-align:center;
+    margin:20px 0;
+}
+
+.telegram a{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:#229ED9;
+    color:#fff;
+    padding:14px 35px;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+}
+.verified{
+    color:#1D9BF0;
+    font-size:12px;
+    margin-left:6px;
+    vertical-align:middle;
+}

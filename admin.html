@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gaming Admin Panel</title>
+
+<link rel="stylesheet" href="admin.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+<script>
+const password = "dinesh9963";
+
+document.addEventListener("DOMContentLoaded", () => {
+
+const loginBtn = document.getElementById("loginBtn");
+
+loginBtn.onclick = function () {
+
+const pass = document.getElementById("adminPassword").value;
+
+if (pass === password) {
+document.getElementById("loginScreen").style.display = "none";
+} else {
+document.getElementById("loginError").innerText = "Wrong Password!";
+}
+
+};
+
+});
+</script>
+<div id="loginScreen" class="login-screen">
+  <div class="login-box">
+    <h2>🔒 Admin Login</h2>
+
+    <input
+      type="password"
+      id="adminPassword"
+      placeholder="Enter Password"
+    >
+
+    <button id="loginBtn">Login</button>
+
+    <p id="loginError"></p>
+  </div>
+</div>
+<div class="container">
+
+<header class="header">
+
+<div>
+
+<h1>🎮 Gaming Admin Panel</h1>
+
+<p>Manage All Games From One Place</p>
+
+</div>
+
+<button id="logoutBtn">
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</button>
+
+</header>
+
+<section class="dashboard">
+
+<div class="card">
+
+<h2 id="totalGames">0</h2>
+
+<p>Total Games</p>
+
+</div>
+
+<div class="card">
+<h2 id="totalViews">0</h2>
+<p>Total Views</p>
+
+</div>
+
+<div class="card">
+
+<h2 id="totalDownloads">0</h2>
+
+<p>Total Downloads</p>
+
+</div>
+
+</section>
+<section class="form-box">
+
+<h2>➕ Add New Game</h2>
+
+<input type="text" id="gameName" placeholder="Game Name">
+
+<input type="text" id="gameImage" placeholder="Game Image URL">
+
+<input type="text" id="gameLink" placeholder="Game Download Link">
+
+<input type="number" id="gameRating" placeholder="Game Rating (1-5)">
+<input type="number" id="gameOrder" placeholder="Game Order (1 = Top)">
+<button id="addGame">Add Game</button>
+<input type="text" id="gameBonus" placeholder="Bonus Text (₹100 Bonus Free) 
+<input type="color" id="gameBonusColorPicker" value="#ff0000">
+<input type="color" id="gameBonusColorPicker" value="#ff0000">
+<input type="color" id="gameBonusColorPicker" value="#ff0000" style="display:none;">
+
+</section>
+
+<section class="games-section">
+
+<h2>📋 All Games</h2>
+
+<div id="gamesList" class="games-list">
+
+</div>
+
+</section>
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="admin.js"></script>
+
+</body>
+</html>

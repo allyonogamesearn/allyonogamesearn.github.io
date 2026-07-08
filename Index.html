@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>All Yono Games Earn</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo-box">
+<img src="images/logo.png" alt="Logo">
+<div>
+
+<h1>All Yono App<br>Earn.com</h1>
+
+<p>
+India's Trusted Gaming Platform
+</p>
+
+</div>
+
+</div>
+
+</header>
+
+<div class="search-box">
+
+<input
+type="search"
+id="searchInput"
+placeholder="🔍 Search All Games"
+enterkeyhint="search">
+
+</div>
+
+<section class="banner-slider">
+
+<div class="slides">
+
+<img src="images/banner1.jpg" class="slide active">
+
+<img src="images/banner2.jpg" class="slide">
+
+<img src="images/banner3.jpg" class="slide">
+
+<img src="images/banner4.jpg" class="slide">
+
+</div>
+
+</section>
+<section class="telegram">
+
+<a href="https://t.me/suriyaerningearn" class="telegram-btn" target="_blank">
+
+<i class="fa-brands fa-telegram"></i> Join Telegram
+
+</a>
+
+</section>
+
+<div class="offer-slider">
+
+<div class="offer-track" id="offerTrack">
+
+<span>🎁 Rummy Bonus ₹500</span>
+
+</div>
+
+</div>
+
+<section class="apps">
+
+<h2>Latest Games</h2>
+
+<div class="app-grid" id="gamesContainer">
+
+<!-- Games will load automatically from Firebase -->
+
+</div>
+
+</section>
+<script>
+const offers = [
+"🎁 Rummy Bonus ₹500",
+"💰 Register Bonus ₹100",
+"🔥 Refer Bonus ₹300",
+"🏆 Instant Withdrawal",
+"🎉 Daily Cashback"
+];
+
+let i = 0;
+
+setInterval(() => {
+    i = (i + 1) % offers.length;
+    document.getElementById("offerTrack").innerHTML =
+        "<span>" + offers[i] + "</span>";
+}, 3000);
+</script>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
